@@ -1,0 +1,69 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+body {
+  background: rgb(131, 255, 131);
+}
+
+.container {
+  display: flex;
+  justify-content: space-around;
+  margin: 40px 0;
+}
+.show-modal {
+  padding: 10px 30px;
+  background: rgb(34, 111, 255);
+  font-weight: bold;
+  color: white;
+  letter-spacing: 3px;
+  cursor: pointer;
+  position: relative;
+  transition: 0.3s;
+  border-radius: 20px;
+  z-index: 0;
+}
+.show-modal:hover {
+  box-shadow: 1.8px 2px 5px black;
+  background-color: rgb(51, 51, 255);
+}
+
+.hidden {
+  display: none;
+}
+
+.modal {
+  background: rgb(255, 255, 255);
+  position: relative;
+  margin: 40px 20rem;
+  padding: 2rem 4rem;
+  border-radius: 1rem;
+  box-shadow: 2px 3px 13px black;
+  z-index: 10;
+}
+.close-modal {
+  border: none;
+  font-size: 2rem;
+  cursor: pointer;
+  float: right;
+  font-weight: bolder;
+  margin-bottom: 8rem;
+  background: transparent;
+}
+.modal-heading {
+  margin: 1rem 0;
+}
+.modal-para {
+  line-height: 2rem;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  font-size: x-large;
+}
+.overlay {
+  background-blend-mode: color;
+  position: relative;
+  background: #0a0a0a90;
+  height: 140vh;
+  margin-top: -30rem;
+  z-index: 1;
+}
